@@ -20,13 +20,16 @@ class FaqPage extends StatelessWidget {
                 DataSource.questionAnswers[index]['question'],
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               )),
+          
+         
           children: <Widget>[
             Padding(
                 padding: EdgeInsets.all(10),
                 child: Text(DataSource.questionAnswers[index]['answer'])),
           ],
         ),
-        itemCount: DataSource.questionAnswers.length,
+         print(DataSource.questionAnswers.length),
+        itemCount: ,
       ),
     );
   }
